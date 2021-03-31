@@ -3,10 +3,10 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       https://hoa.org.uk
+ * @link       https://johnheritage.com
  * @since      1.0.0
- * @package    HOA_Page_Message
- * @subpackage HOA_Page_Message/admin
+ * @package    Page_Message
+ * @subpackage Page_Message/admin
  */
 
 /**
@@ -15,9 +15,9 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    HOA_Page_Message
- * @subpackage HOA_Page_Message/admin
- * @author     John Heritage <john@hoa.org.uk>
+ * @package    Page_Message
+ * @subpackage Page_Message/admin
+ * @author     John Heritage <john@johnheritage.com>
  */
 class Plugin_Name_Admin {
 

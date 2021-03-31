@@ -2,20 +2,20 @@
 
 /**
  *
- * @link              https://hoa.org.uk
+ * @link              https://johnheritage.com
  * @since             1.0.0
- * @package           HOA_Page_Message
+ * @package           Page_Message
  *
  * @wordpress-plugin
- * Plugin Name:       HOA Page Message
- * Plugin URI:        https://hoa.org.uk
+ * Plugin Name:       Page Message
+ * Plugin URI:        https://johnheritage.com
  * Description:       This plugin will add a message popup to every page so users can fill in and leave a message via a form. Like an offline live chat.
  * Version:           1.0.0
- * Author:            John Heritage @ HOA
+ * Author:            John Heritage
  * Author URI:        https://johnheritage.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       hoa-page-message
+ * Text Domain:       page-message
  * Domain Path:       /languages
  */
 

@@ -5,8 +5,8 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  * 
- * @link       https://hoa.org.uk
+ * @link       https://johnheritage.com
  * @since      1.0.0
- * @package    HOA_Page_Message
- * @subpackage HOA_Page_Message/public/partials
+ * @package    Page_Message
+ * @subpackage Page_Message/public/partials
  */

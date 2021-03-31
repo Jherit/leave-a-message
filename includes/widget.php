@@ -3,13 +3,11 @@
  $base_colour = get_option('base_colour'); 
  $headline = get_option('head_line'); 
  $button_colour = get_option('button_colour'); 
- $send_email = get_option('send_address');
 
      global $result;
      global $post;
      $post_slug = $post->post_name;
  ?>
- <p style="display:none;"><?php echo $send_email ?></p>
  <p id="baseColour" style="display:none;"><?php echo $base_colour ?></p>
  <p id="headline" style="display:none;"><?php echo $headline ?></p>
  <p id="buttonColour" style="display:none;"><?php echo $button_colour ?></p>
@@ -346,7 +344,8 @@
          var form = document.getElementById('pageForm');
          var data = new FormData(form);
          const Http = new XMLHttpRequest();
-         const url='/wp-content/plugins/hoa-page-message/includes/send.php';
+         // You may need to edit the path below.
+         const url='/wp-content/plugins/page-message/includes/send.php';
          Http.open("POST", url);
          Http.send(data);
          Http.onreadystatechange = function () {

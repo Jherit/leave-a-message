@@ -2,14 +2,14 @@
 $send_email = get_option('send_address');
 $email = htmlspecialchars(stripslashes(trim($_POST['email']))); 
 $to = $send_email;
-$subject = 'HOA page message submission';
+$subject = 'page message submission';
 $message1 = htmlspecialchars(stripslashes(trim($_POST['message'])));
 $thisPage = trim($_POST['window']);
-$message = "Message from HOA page: $thisPage" . " .\r\n" . $email . " asked: " . "\r\n" . $message1;
+$message = "Message from page: $thisPage" . " .\r\n" . $email . " asked: " . "\r\n" . $message1;
 $header = "MIME-Version: 1.0" . "\r\n" .
 "Content-type:text/html;charset=UTF-8" . "\r\n" .
-"From: ". $email . "\r\n" .
-"Bcc: john@hoa.org.uk";
+"From: ". $email . "\r\n";
+// "Bcc: email@bcc.co.uk";
 
 
 
