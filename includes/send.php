@@ -1,7 +1,8 @@
 <?php
-$send_email = get_option('send_address');
+session_start();
+
 $email = htmlspecialchars(stripslashes(trim($_POST['email']))); 
-$to = $send_email;
+$to = $_SESSION["email_who"]; 
 $subject = 'page message submission';
 $message1 = htmlspecialchars(stripslashes(trim($_POST['message'])));
 $thisPage = trim($_POST['window']);

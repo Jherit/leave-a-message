@@ -1,8 +1,15 @@
-<?php function add_widget() {
+<?php function 
+
+session_start();
+
+add_widget() {
     
  $base_colour = get_option('base_colour'); 
  $headline = get_option('head_line'); 
  $button_colour = get_option('button_colour'); 
+ $email_who = get_option('mail_who');
+
+ $_SESSION["mail_who"] = $email_who;
 
      global $result;
      global $post;

@@ -15,7 +15,7 @@ function hpm_Add_My_Admin_Link()
         'manage_options', // Capability requirement to see the link
         'HOA-Page-Message',
         'extra_post_info_page', // The 'slug' - file to display when clicking the link
-        'send email address'
+        'mail_who' // The email address that messages are sent to - must have SMTP setup in wordpress for this to work
       );
     add_action( 'admin_init', 'update_extra_post_info' ); 
 }
@@ -26,8 +26,7 @@ function update_extra_post_info() {
     register_setting( 'extra-post-info-settings', 'base_colour' );
     register_setting( 'extra-post-info-settings', 'button_colour' );
     register_setting( 'extra-post-info-settings', 'head_line' );  
-    register_setting( 'extra-post-info-settings', 'send_address' ); 
-    // register_setting( 'extra-post-info-settings', 'mail_who' ); 
+    register_setting( 'extra-post-info-settings', 'mail_who' ); 
   }
   
 // Create WordPress plugin page
@@ -52,7 +51,7 @@ function extra_post_info_page(){
           </tr>
           <tr valign="top">
           <th scope="row">Email</th>
-          <td><input type="email" name="send_address" value="<?php echo get_option('send_address'); ?>" placeholder="Address for messages to go to"/></td>
+          <td><input type="email" name="mail_who" value="<?php echo get_option('mail_who'); ?>" placeholder="Address for messages to go to"/></td>
         
           </tr>
         </table>
